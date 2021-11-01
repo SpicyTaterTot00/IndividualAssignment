@@ -1,20 +1,195 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      background-color: grey; 
+      margin-bottom: 50px;
+      border-radius: 0;
+      color: black;
+      font-weight: bold;
+      color: black;
+    }
+    
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      background-color: black;
+      color: white;
+      margin-bottom: 0;
+    }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
-    <title>Resume</title>
-  </head>
-    {% extends "template.html" %}
-    {% block content %}
-    <body>
-      <center><img src="static/images/profile.jpg" style="width:200px;height:200px;"></center>
-      <h1><span>Jessica McFarland<span></h1>
-    </body>  
-    {% endblock %}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-  </body>
+    .standard {
+        background-color: lightgray;
+        border: 1px solid black;
+        grid-template-rows: 100px 300px;
+        text-align: left;
+    }
+
+    .reverse{
+        background-color: black;
+        border: 1px solid black;
+        grid-template-rows: 100px 300px;
+        text-align: left;
+        color: white;
+    }
+    
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-left">
+    <h1>Page one</h1>  
+    <p>This is the header for page 1</p>    
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="{{ url_for('page1') }}">Home</a></li>
+        <li><a href="{{ url_for('page2') }}">Page 2</a></li>
+        <li><a href="{{ url_for('page3') }}">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-9">
+        <div class = "reverse">
+            <h2>Row 1</h2>
+            <p>This is column 1</p>
+        </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class = "standard">
+      <h2>Row 1</h2>
+      <p>This is column 2</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Row 2</div>
+        <div class="panel-body">Column 1</div>
+        <div class="panel-footer">12</div>
+      </div>
+    </div>
+</div><br><br>
+
+<div class="container">    
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Row 3</div>
+          <div class="panel-body">Column 1</div>
+          <div class="panel-footer">5</div>
+        </div>
+      </div>
+      <div class="col-sm-7"> 
+        <div class="panel panel-success">
+          <div class="panel-heading">Row 3</div>
+          <div class="panel-body">Column 2</div>
+          <div class="panel-footer">7</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Row 4</div>
+          <div class="panel-body">Column 1</div>
+          <div class="panel-footer">8</div>
+        </div>
+      </div>
+      <div class="col-sm-3"> 
+        <div class="panel panel-success">
+          <div class="panel-heading">Row 4</div>
+          <div class="panel-body">Column 2</div>
+          <div class="panel-footer">4</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Row 5</div>
+          <div class="panel-body">Column 1</div>
+          <div class="panel-footer">5</div>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class="panel panel-success">
+          <div class="panel-heading">Row 5</div>
+          <div class="panel-body">Column 2</div>
+          <div class="panel-footer">3</div>
+        </div>
+      </div>
+      <div class="col-sm-3"> 
+        <div class="panel panel-success">
+          <div class="panel-heading">Row 5</div>
+          <div class="panel-body">Column 3</div>
+          <div class="panel-footer">4</div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Row 6</div>
+          <div class="panel-body">Column 1</div>
+          <div class="panel-footer">12</div>
+        </div>
+      </div>
+  </div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Footer for Page 1</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
 </html>
+
+
+
