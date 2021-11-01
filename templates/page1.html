@@ -25,6 +25,7 @@
     
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
+      background-image: url('static/images/blackgrid.jpeg');
       background-color: black;
       color: white;
       margin-bottom: 0;
@@ -35,10 +36,20 @@
         border: 1px solid black;
         grid-template-rows: 100px 300px;
         text-align: left;
+        background-image: url('static/images/grid.jpeg');
     }
 
     .reverse{
         background-color: black;
+        border: 1px solid black;
+        grid-template-rows: 100px 300px;
+        text-align: left;
+        color: white;
+        background-image: url('static/images/blackgrid.jpeg');
+    }
+
+    .purple{
+      background-color: rgb(112, 42, 112);
         border: 1px solid black;
         grid-template-rows: 100px 300px;
         text-align: left;
@@ -48,8 +59,8 @@
    
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
-      padding: 25px;
+      background-image: url('static/images/blackgrid.jpeg');
+      color:white;
     }
   </style>
 </head>
@@ -101,28 +112,26 @@
 <div class="container">    
   <div class="row">
     <div class="col-sm-12">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Row 2</div>
-        <div class="panel-body">Column 1</div>
-        <div class="panel-footer">12</div>
+      <div class = "purple">
+        <h2>Row 2</h2>
+        <p>This is column 1</p>
       </div>
     </div>
+  </div>
 </div><br><br>
 
 <div class="container">    
     <div class="row">
       <div class="col-sm-5">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Row 3</div>
-          <div class="panel-body">Column 1</div>
-          <div class="panel-footer">5</div>
+        <div class = "standard">
+          <h2>Row 3</h2>
+          <p>This is column 1</p>
         </div>
       </div>
       <div class="col-sm-7"> 
-        <div class="panel panel-success">
-          <div class="panel-heading">Row 3</div>
-          <div class="panel-body">Column 2</div>
-          <div class="panel-footer">7</div>
+        <div class = "standard">
+          <h2>Row 3</h2>
+          <p>This is column 2</p>
         </div>
       </div>
     </div>
@@ -131,17 +140,15 @@
   <div class="container">    
     <div class="row">
       <div class="col-sm-9">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Row 4</div>
-          <div class="panel-body">Column 1</div>
-          <div class="panel-footer">8</div>
+        <div class = "standard">
+          <h2>Row 4</h2>
+          <p>This is column 1</p>
         </div>
       </div>
       <div class="col-sm-3"> 
-        <div class="panel panel-success">
-          <div class="panel-heading">Row 4</div>
-          <div class="panel-body">Column 2</div>
-          <div class="panel-footer">4</div>
+        <div class = "standard">
+          <h2>Row 4</h2>
+          <p>This is column 2</p>
         </div>
       </div>
     </div>
@@ -150,24 +157,21 @@
   <div class="container">    
     <div class="row">
       <div class="col-sm-5">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Row 5</div>
-          <div class="panel-body">Column 1</div>
-          <div class="panel-footer">5</div>
+        <div class = "standard">
+          <h2>Row 5</h2>
+          <p>This is column 1</p>
         </div>
       </div>
       <div class="col-sm-4"> 
-        <div class="panel panel-success">
-          <div class="panel-heading">Row 5</div>
-          <div class="panel-body">Column 2</div>
-          <div class="panel-footer">3</div>
+        <div class = "standard">
+          <h2>Row 5</h2>
+          <p>This is column 2</p>
         </div>
       </div>
       <div class="col-sm-3"> 
-        <div class="panel panel-success">
-          <div class="panel-heading">Row 5</div>
-          <div class="panel-body">Column 3</div>
-          <div class="panel-footer">4</div>
+        <div class = "standard">
+          <h2>Row 5</h2>
+          <p>This is column 3</p>
         </div>
       </div>
     </div>
@@ -176,20 +180,18 @@
   <div class="container">    
     <div class="row">
       <div class="col-sm-12">
-        <div class="panel panel-primary">
-          <div class="panel-heading">Row 6</div>
-          <div class="panel-body">Column 1</div>
-          <div class="panel-footer">12</div>
+        <div class = "standard">
+          <h2>Row 6</h2>
+          <p>This is column 1</p>
         </div>
       </div>
   </div><br><br>
 
 <footer class="container-fluid text-center">
   <p>Footer for Page 1</p>  
-  <form class="form-inline">Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
-  </form>
+  <ul>Stuff</ul>
+  <ul>Stuff</ul>
+  <ul>Stuff</ul>
 </footer>
 
 </body>
