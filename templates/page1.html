@@ -14,12 +14,12 @@
       margin-bottom: 50px;
       border-radius: 0;
       color: black;
-      font-weight: bold;
-      color: black;
     }
 
     .nav-links > li > a:hover {
-     color: transparent
+     color: transparent;
+     color: black;
+     font-weight: bold;
     }
     
     
@@ -37,6 +37,8 @@
         grid-template-rows: 100px 300px;
         text-align: left;
         background-image: url('static/images/grid.jpeg');
+        box-sizing: border-box;
+       padding: 10px;
     }
 
     .reverse{
@@ -46,6 +48,8 @@
         text-align: left;
         color: white;
         background-image: url('static/images/blackgrid.jpeg');
+        box-sizing: border-box;
+        padding: 10px;
     }
 
     .purple{
@@ -54,6 +58,12 @@
         grid-template-rows: 100px 300px;
         text-align: left;
         color: white;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    p{
+      font-weight: bold;
     }
     
    
@@ -61,6 +71,8 @@
     footer {
       background-image: url('static/images/blackgrid.jpeg');
       color:white;
+      float: left;
+      width: 100%;
     }
   </style>
 </head>
@@ -68,8 +80,8 @@
 
 <div class="jumbotron">
   <div class="container text-left">
-    <h1>Page one</h1>  
-    <p>This is the header for page 1</p>    
+    <h1>Grid By Example</h1>  
+    <p>Everything you need to learn CSS Grid Layout</p>    
   </div>
 </div>
 
@@ -94,16 +106,16 @@
 
 <div class="container">    
   <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-8">
         <div class = "reverse">
-            <h2>Row 1</h2>
-            <p>This is column 1</p>
+            <h1>CSS Grid Layout</h1>
+            <p>Insert Text</p>
         </div>
     </div>
-    <div class="col-sm-3"> 
+    <div class="col-sm-4"> 
       <div class = "standard">
-      <h2>Row 1</h2>
-      <p>This is column 2</p>
+      <h2>The Video Tutorial</h2>
+      <p>Insert Text</p>
       </div>
     </div>
   </div>
@@ -113,8 +125,8 @@
   <div class="row">
     <div class="col-sm-12">
       <div class = "purple">
-        <h2>Row 2</h2>
-        <p>This is column 1</p>
+        <h2>Get Started Guide</h2>
+        <p>Insert Text</p>
       </div>
     </div>
   </div>
@@ -124,14 +136,14 @@
     <div class="row">
       <div class="col-sm-5">
         <div class = "standard">
-          <h2>Row 3</h2>
-          <p>This is column 1</p>
+          <h2>The Examples</h2>
+          <p>Insert Text</p>
         </div>
       </div>
       <div class="col-sm-7"> 
         <div class = "standard">
-          <h2>Row 3</h2>
-          <p>This is column 2</p>
+          <h2>Patterns</h2>
+          <p>Insert Text</p>
         </div>
       </div>
     </div>
@@ -139,16 +151,16 @@
 
   <div class="container">    
     <div class="row">
-      <div class="col-sm-9">
+      <div class="col-sm-8">
         <div class = "standard">
-          <h2>Row 4</h2>
-          <p>This is column 1</p>
+          <h2>Resources</h2>
+          <p>Insert Text</p>
         </div>
       </div>
-      <div class="col-sm-3"> 
+      <div class="col-sm-4"> 
         <div class = "standard">
-          <h2>Row 4</h2>
-          <p>This is column 2</p>
+          <h2>CSS Layout News</h2>
+          <p>Insert Text</p>
         </div>
       </div>
     </div>
@@ -158,20 +170,20 @@
     <div class="row">
       <div class="col-sm-5">
         <div class = "standard">
-          <h2>Row 5</h2>
-          <p>This is column 1</p>
-        </div>
-      </div>
-      <div class="col-sm-4"> 
-        <div class = "standard">
-          <h2>Row 5</h2>
-          <p>This is column 2</p>
+          <h2>Questions?</h2>
+          <p>Insert Text</p>
         </div>
       </div>
       <div class="col-sm-3"> 
         <div class = "standard">
-          <h2>Row 5</h2>
-          <p>This is column 3</p>
+          <h2>About CSS Grid</h2>
+          <p>Insert Text</p>
+        </div>
+      </div>
+      <div class="col-sm-4"> 
+        <div class = "standard">
+          <h2>News</h2>
+          <p>Insert Text</p>
         </div>
       </div>
     </div>
@@ -181,8 +193,8 @@
     <div class="row">
       <div class="col-sm-12">
         <div class = "standard">
-          <h2>Row 6</h2>
-          <p>This is column 1</p>
+          <h2>GridBugs!</h2>
+          <p>Insert Text</p>
         </div>
       </div>
   </div><br><br>
