@@ -7,18 +7,49 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
     /* Remove the navbar's default rounded borders and increase the bottom margin */ 
     .navbar {
       margin-bottom: 50px;
       border-radius: 0;
       background-color: black;
+      color:goldenrod;
     }
+    
+    h3{
+      color:whitesmoke;
+      font-style: Trattatello, fantasy;
+    }
+
+    .panel-footer{
+      background-color: black;
+      color:whitesmoke;
+      border-color:goldenrod; 
+      padding: 1em;
+    }
+
+    .panel-body{
+      background-color: black;
+      color:whitesmoke;
+      border-color:goldenrod; 
+      padding: 1em;
+    }
+
+    .panel-header{
+      background-color: black;
+      color:whitesmoke;
+      border-color:goldenrod; 
+      padding: 1em;
+
+    }
+
     
     /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
        background-color: rgb(94, 91, 91);
       margin-bottom: 0;
+      color: whitesmoke;
     }
 
     .container{
@@ -35,14 +66,19 @@
     width: 100%;
     background-image: url('static/images/ember.jpeg');
     color: whitesmoke;
+    box-sizing: content-box;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to right bottom, #260B3C, gold);
+    border-image-slice: 1;
 
      }
 
-    body, html {
+    html {
     height: 100%;
     }
 
-    .body { 
+    body { 
     /* The image used */
     background-color: black;
 
@@ -66,8 +102,8 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Online Store</h1>      
-    <p>Mission, Vission & Values</p>
+    <h1><i class="glyphicon glyphicon-cloud"></i></h1>  
+    <p>Logo name</p>    
   </div>
 </div>
 
@@ -101,10 +137,9 @@
 </nav>
 
 <article class="content">
-  <h1>Using negative space</h1>
-  <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
-  
-  <p>By making the content span a number of rows, we can then space the blocks out next to that content. Each in their own row.</p>
+  <h3>Discover the wizarding world</h3>
+  <h1>Harry Potter</h1>
+  <p>The first Harry Potter book, Harry Potter and the Philosopher’s Stone, was published by Bloomsbury in 1997 to immediate popular and critical acclaim. Six further best-selling books, three companion books, a playscript and two screenplays have since followed. The Harry Potter books have been translated into over 80 languages, won multiple awards, and sold more than 500 million copies worldwide, becoming the best-selling book series in history.</p>
 </article>
 
 <div class="container">    
@@ -113,28 +148,28 @@
       <div class="panel">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
   </div>
@@ -147,38 +182,35 @@
       <div class="panel">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-3"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
   </div>
 </div><br>
 
 <article class="content">
-  <h1>Using negative space</h1>
-  <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
-  
-  <p>By making the content span a number of rows, we can then space the blocks out next to that content. Each in their own row.</p>
+  <h1 style="border:3px; border-style:solid; border-color:goldenrod; padding: 1em;">Fantastic Beasts</h1>
 </article>
 
 
@@ -189,14 +221,14 @@
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-6"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     </div>
@@ -204,10 +236,7 @@
 </div><br>
 
 <article class="content">
-  <h1>Using negative space</h1>
-  <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
-  
-  <p>By making the content span a number of rows, we can then space the blocks out next to that content. Each in their own row.</p>
+  <h1 style="border:3px; border-style:solid; border-color:goldenrod; padding: 1em;">Hogwarts Library</h1> 
 </article>
 
 <div class="container">    
@@ -216,21 +245,21 @@
       <div class="panel">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel ">
         <div class="panel-heading"></div>
         <div class="panel-body"><center><img src="static/images/generic.png" style="width:200px;height:200px;"></center></div>
-        <div class="panel-footer"></div>
+        <div class="panel-footer">Description</div>
       </div>
     </div>
   </div>
@@ -243,7 +272,6 @@
     <button type="button" class="btn btn-danger">Sign Up</button>
   </form>
 </footer>
-
 </body>
 </html>
 
